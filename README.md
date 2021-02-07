@@ -194,7 +194,14 @@ For more info please read [here](https://www.google.com)
 <details>
 <summary>CICD</summary><br><b>
   
-Stages of CI/CD:
+The Software Development Life Cycle (SDLC) model covers the following phases:
+
+1. Planning
+2. Implementation
+3. Testing
+4. Documentation
+5. Deployment and maintenance
+6. Maintaining
 
   
 Some of the advantages are:
