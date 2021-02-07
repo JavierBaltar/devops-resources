@@ -334,7 +334,7 @@ For more info please read [here](https://www.google.com)
 <summary>Elastic Stack</summary><br><b>
 
 For more info please read [here](https://www.google.com)
-
+</b></details>
 <summary>Grafana</summary><br><b>
 
 </b></details>
