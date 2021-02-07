@@ -31,6 +31,16 @@
 <details>
 <summary>Docker</summary><br><b>
 
+Concepts
+
+The Linux kernel has a number of features that allow a process to be isolated. Container engines such as Docker use two main kernel features to isolate processes: Cgroups and Namespaces. 
+- Namespaces
+- Cgroups
+
+LXC
+
+Libcontainer
+
 Dockerfile
 
 Each Dockerfile is a script, composed of various commands and arguments listed successively to automatically perform actions on a base image (or from scratch) in order to create a new one.
