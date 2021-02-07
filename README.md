@@ -29,11 +29,10 @@
 
 <details>
 <summary>Kubernetes</summary><br><b>
-  
+</b></details>
+
+<details>
 <summary>EKS</summary><br><b>
-  
-
-
 </b></details>
 
 ## Jenkins
