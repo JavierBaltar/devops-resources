@@ -193,6 +193,28 @@ For more info please read [here](https://www.google.com)
 
 <details>
 <summary>CICD</summary><br><b>
+  
+Some of the advantages are:
+
+- Speed of deployment
+- Faster testing and analysis
+- Smaller code changes
+- Better and faster fault isolation
+- Increased code coverage
+- Automatic deploy to production
+- Never ship broken code
+- Process is repeatable
+- Faster mean time to resolution
+- Smaller backlog
+- Improved customer satisfaction
+- Tons of open source tools available
+
+The disadvantages of CI/CD are:
+
+- New skill sets must be learned
+- Big upfront investment
+- Legacy systems rarely support CI/CD
+- High degree of discipline and dedication to quality
 
 For more info please read [here](https://www.google.com)
 
