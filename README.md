@@ -263,6 +263,18 @@ In this model each task is implemented on its own branch with the task key inclu
 - Release branching:
 Once the develop branch has acquired enough features for a release, you can clone that branch to form a Release branch. Creating this branch starts the next release cycle, so no new features can be added after this point, only bug fixes, documentation generation, and other release-oriented tasks should go in this branch. Once it is ready to ship, the release gets merged into master and tagged with a version number. In addition, it should be merged back into develop branch, which may have progressed since the release was initiated.
 
+Revert a commit
+
+```bash
+#Remove or fix the bad file in a new commit and push it to the remote repository
+git commit -m “commit message”
+```
+
+```bash
+#Create a new commit that undoes all changes that were made in the commit to be reverted
+git revert <name of commit to be reverted>
+```
+
 Git rebase details [here](https://git-scm.com/docs/git-rebase)
 
 
