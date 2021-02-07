@@ -30,6 +30,8 @@
 <details>
 <summary>Kubernetes</summary><br><b>
   
+<summary>EKS</summary><br><b>
+  
 
 
 </b></details>
