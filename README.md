@@ -29,7 +29,6 @@
 
 <details>
 <summary>Kubernetes</summary><br><b>
-</b></details>
 
 ##Kubernetes Basics
 Pod is a group of linked containers which shares a unique IP address. 
@@ -67,6 +66,7 @@ service.yaml
 ##Helm
 
 ##Planning for Production Deployments
+</b></details>
 
 <details>
 <summary>EKS</summary><br><b>
