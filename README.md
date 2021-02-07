@@ -34,11 +34,51 @@
 
 </b></details>
 
+## Git
+
+<details>
+<summary>Git</summary><br><b>
+
+
+</b></details>
+
+## AWS
+
+<details>
+<summary>AWS</summary><br><b>
+
+
+</b></details>
+
+## Linux
+
+<details>
+<summary>Linux</summary><br><b>
+
+
+</b></details>
+
 ## Jenkins
 
 <details>
 <summary>Jenkins</summary><br><b>
   
+
+
+</b></details>
+
+## Terraform
+
+<details>
+<summary>Terraform</summary><br><b>
+
+
+</b></details>
+
+## Python
+
+<details>
+<summary>Python</summary><br><b>
 
 
 </b></details>
