@@ -35,6 +35,11 @@ Dockerfile
 
 Each Dockerfile is a script, composed of various commands and arguments listed successively to automatically perform actions on a base image (or from scratch) in order to create a new one.
 
+```bash
+# Usage: ADD [source directory or URL] [destination directory]
+ADD /my_app_folder /my_app_folder
+```
+
 Best practices for writing Dockerfiles [here](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
 
 
