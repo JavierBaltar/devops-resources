@@ -331,8 +331,10 @@ For more info please read [here](https://www.google.com)
 ## APM
 
 <details>
-<summary>APM</summary><br><b>
+<summary>Elastic Stack</summary><br><b>
 
 For more info please read [here](https://www.google.com)
+
+<summary>Grafana</summary><br><b>
 
 </b></details>
