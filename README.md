@@ -104,6 +104,9 @@ kubectl delete namespaces my-namespace
 
 #Force deletion of a pod
 kubectl delete pod my-pod --grace-period=0 --force
+
+#Delete all pods in a namespace
+kubectl delete pods --all --namespace my-namespace
 ```
 
 kubectl delete pod XX
