@@ -89,8 +89,12 @@ Basic Commands:
 
 kubectl set image
 
+1. Listing resources
+
 ```bash
 kubectl get nodes
+kubectl get pods
+kubectl get services, deployments
 ```
 
 kubectl get pods
