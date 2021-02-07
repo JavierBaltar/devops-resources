@@ -97,7 +97,14 @@ kubectl get pods
 kubectl get services, deployments
 ```
 
-kubectl get pods
+2. Deleting resources
+
+```bash
+kubectl delete namespaces my-namespace
+
+#Force deletion of a pod
+kubectl delete pod my-pod --grace-period=0 --force
+```
 
 kubectl delete pod XX
 
