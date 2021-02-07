@@ -275,6 +275,21 @@ git commit -m “commit message”
 git revert <name of commit to be reverted>
 ```
 
+Squash commits
+
+There are two options to squash last N commits into a single commit.
+
+```bash
+#If you want to write the new commit message from scratch use the following command
+git reset –soft HEAD~N &&
+git commit
+```
+```bash
+#If you want to start editing the new commit message with a concatenation of the existing commit messages then you need to extract those messages and pass them to Git commit for that I will use
+git reset –soft HEAD~N &&
+git commit –edit -m”$(git log –format=%B –reverse .HEAD@{N})”
+```
+
 Git rebase details [here](https://git-scm.com/docs/git-rebase)
 
 
