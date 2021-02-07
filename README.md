@@ -248,6 +248,10 @@ pipeline {
 <details>
 <summary>Git</summary><br><b>
   
+Git is a distributed Version Control system. It can track changes to a file and allows you to revert back to any particular change.
+Its distributed architecture provides many advantages over other Version Control Systems (VCS) like SVN one major advantage is that it does not rely on a central server to store all the versions of a project’s files. Instead, every developer “clones” a copy of a repository I have shown in the diagram below with “Local repository” and has the full history of the project on his hard drive so that when there is a server outage, all you need for recovery is one of your teammate’s local Git repository.
+There is a central cloud repository as well where developers can commit changes and share it with other teammates as you can see in the diagram where all collaborators are commiting changes “Remote repository”.
+  
 Branching strategies
 
 - Feature branching: 
