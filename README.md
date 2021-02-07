@@ -30,42 +30,49 @@
 <details>
 <summary>Kubernetes</summary><br><b>
 
-##Kubernetes Basics
-Pod is a group of linked containers which shares a unique IP address. 
-Labels are key-value pairs attached to resources that contain information that helps to identify them. 
-ReplicaSet is a resource that templates the creation of pods
-NOTE: ReplicaSet replaces the ReplicaController
-Deployment are used to gracefully roll out new versions of ReplicaSets.
-Services give a way of accessing services within our Kubernetes cluster. 
+Kubernetes Basics
 
-##Kubernetes Components
-###Architecture
+- Pod is a group of linked containers which shares a unique IP address. 
+- Labels are key-value pairs attached to resources that contain information that helps to identify them. 
+- ReplicaSet is a resource that templates the creation of pods. NOTE: ReplicaSet replaces the ReplicaController
+- Deployment are used to gracefully roll out new versions of ReplicaSets.
+- Services give a way of accessing services within our Kubernetes cluster. 
 
-####API server
-####Controller manager
-####Scheduler
-####Kubelet
-####etcd
+Kubernetes Components:
+
+Architecture
+
+API server
+
+Controller manager
+
+Scheduler
+
+Kubelet
+
+etcd
 
 
-##Basic Commands
-kubectl set image 
+Basic Commands:
+
+kubectl set image
+
 kubectl get pods
+
 kubectl delete pod XX
+
 kubectl scale XX
 
-##Configuration as Code
+Configuration as Code:
 service.yaml
 
-##EKS Cluster Setup
+EKS Cluster Setup
 
-###IAM
+IAM
 
+Helm
 
-
-##Helm
-
-##Planning for Production Deployments
+Planning for Production Deployments
 </b></details>
 
 <details>
