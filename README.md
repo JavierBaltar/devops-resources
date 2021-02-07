@@ -257,6 +257,8 @@ Git rebase details [here](https://git-scm.com/docs/git-rebase)
 
 <details>
 <summary>AWS</summary><br><b>
+  
+AWS DevOps Blog [here](https://aws.amazon.com/blogs/devops/)
 
 
 </b></details>
