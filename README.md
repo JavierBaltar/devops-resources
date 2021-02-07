@@ -139,6 +139,8 @@ Planning for Production Deployments
 <details>
 <summary>Git</summary><br><b>
 
+Git rebase details [here](https://git-scm.com/docs/git-rebase)
+
 
 </b></details>
 
