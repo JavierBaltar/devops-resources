@@ -194,6 +194,9 @@ For more info please read [here](https://www.google.com)
 <details>
 <summary>CICD</summary><br><b>
   
+Stages of CI/CD:
+
+  
 Some of the advantages are:
 
 - Speed of deployment
