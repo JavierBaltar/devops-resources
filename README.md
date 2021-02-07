@@ -89,6 +89,10 @@ Basic Commands:
 
 kubectl set image
 
+```bash
+kubectl get nodes
+```
+
 kubectl get pods
 
 kubectl delete pod XX
