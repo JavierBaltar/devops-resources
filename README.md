@@ -136,6 +136,16 @@ Planning for Production Deployments
 <summary>EKS</summary><br><b>
 </b></details>
 
+<details>
+<summary>GKE</summary><br><b>
+
+Create a cluster
+```bash
+gcloud container clusters create mycluster
+```
+
+</b></details>
+
 ## Jenkins
 
 <details>
