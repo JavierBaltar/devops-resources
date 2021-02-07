@@ -31,6 +31,10 @@
 <details>
 <summary>Docker</summary><br><b>
 
+Dockerfile
+
+Each Dockerfile is a script, composed of various commands and arguments listed successively to automatically perform actions on a base image (or from scratch) in order to create a new one.
+
 Best practices for writing Dockerfiles [here](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
 
 
