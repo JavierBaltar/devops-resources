@@ -290,6 +290,12 @@ git reset –soft HEAD~N &&
 git commit –edit -m”$(git log –format=%B –reverse .HEAD@{N})”
 ```
 
+Git rebase
+
+Rebase is a command which will merge another branch into the branch where you are currently working, and move all of the local commits that are ahead of the rebased branch to the top of the history on that branch. For example, if a feature branch was created from master, and since then the master branch has received new commits, Git rebase can be used to move the feature branch to the tip of master.
+
+The command effectively will replay the changes made in the feature branch at the tip of master, allowing conflicts to be resolved in the process. When done with care, this will allow the feature branch to be merged into master with relative ease and sometimes as a simple fast-forward operation.
+
 Git rebase details [here](https://git-scm.com/docs/git-rebase)
 
 
