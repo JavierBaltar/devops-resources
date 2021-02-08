@@ -112,7 +112,6 @@ Configuration file stored in "/etc/ansible/ansible.cfg".
 | forks | 5 | Specify number of parallel processes to use |
 | remote_port | 22 | Remote SSH port |
 | host_key_checking | true | Check host key installed |
-
 | timeout | 10 | SSH connection timeout in seconds |
 | remote_user | root | Remote connection user |
 | become | false | Run operations with become (does not imply password prompting) |
