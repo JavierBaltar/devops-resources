@@ -423,7 +423,10 @@ Git rebase details [here](https://git-scm.com/docs/git-rebase)
   
 AWS DevOps Blog [here](https://aws.amazon.com/blogs/devops/)
 
+</b></details>
 
+<details>
+<summary>EC2</summary><br><b>
 </b></details>
 
 <details>
