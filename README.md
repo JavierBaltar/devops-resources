@@ -337,7 +337,7 @@ AWS DevOps Blog [here](https://aws.amazon.com/blogs/devops/)
 <details>
 <summary>Python</summary><br><b>
 
-For more info please read [here](https://www.google.com)
+Python online IDE [here](https://repl.it/languages/python3)
 
 </b></details>
 
