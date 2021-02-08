@@ -324,6 +324,10 @@ https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 
 https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/ 
 
+https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-conditions
+
+
+
 kubectl set image
 
 1. Listing resources
@@ -556,6 +560,9 @@ AWS DevOps Blog [here](https://aws.amazon.com/blogs/devops/)
 
 <details>
 <summary>CloudFormation</summary><br><b>
+  
+- Handy Features
+
 </b></details>
 
 ## Linux
