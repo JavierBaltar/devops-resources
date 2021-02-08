@@ -322,6 +322,8 @@ Basic Commands:
 
 https://kubernetes.io/docs/reference/kubectl/cheatsheet/ 
 
+https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/ 
+
 kubectl set image
 
 1. Listing resources
