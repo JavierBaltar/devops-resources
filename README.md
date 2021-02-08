@@ -97,7 +97,7 @@ The following example represents a YAML playbook:
     
 ```
 
-Configuration File
+- Configuration File
 
 Certain settings in Ansible are adjustable via a configuration file (ansible.cfg). The stock configuration should be sufficient for most users, but there may be reasons you would want to change them.
 Configuration file which will be processed in the following order:
@@ -106,10 +106,10 @@ Actual directory "ansible.cfg" file.
 Home directory "ansible.cfg" file.
 Configuration file stored in "/etc/ansible/ansible.cfg".
 
-| Command | Description |
-| --- | ----------- |
-| ansible all -m ping | The basic command of ansible ad-hoc against 'all' hosts on the inventory file and using the 'ping' module |
-| ansible localhost -m copy -a 'src=/home/myfile dest=/home/mydestinationfolder/myfilecopied' | The command copies a file to a destination folder |
+| Option | Default Value | Description |
+| --- | ----------- | -------- |
+| inventory | /etc/ansible/hosts | Inventory location |
+| forks | 5 | Specify number of parallel processes to use |
 
 Option
 Default Value
