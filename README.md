@@ -24,6 +24,135 @@
 
 <details>
 <summary>Ansible</summary><br><b>
+  
+- Inventory
+
+The Ansible inventory file defines the hosts and groups of hosts upon which commands, modules, and tasks in a playbook operate. The file can be in one of many formats depending on your Ansible environment and plugins. 
+
+The default location for the inventory file is /etc/ansible/hosts. If necessary, you can also create project-specific inventory files in alternate locations.
+
+The inventory file can list individual hosts or user-defined groups of hosts. For example, if you are managing one or more data centers, you can create Ansible groups for those components that require the same set of operations.
+
+
+- YAML
+
+YAML stands for "YAML Ain't Markup Language" (Please refer to: https://yaml.org ). 
+it is basically a human-readable structured data format. It is less complex and ungainly than XML or JSON, but provides similar capabilities.
+There are some rules that YAML has in place to avoid issues related to ambiguity. 
+
+These rules make it possible for a single YAML file to be interpreted consistently, regardless of which library is being used to interpret it.
+
+YAML files should end in .yaml.
+YAML is case sensitive.
+YAML uses a fixed indentation scheme to represent relationships between data layers.
+Dictionary keys are represented in YAML as strings terminated by a trailing colon. Values are represented by either a string following the colon, separated by a space.
+To represent lists of items, a single dash followed by a space is used. Multiple items are a part of the same list as a function of their having the same level of indentation.
+
+The following example represents a YAML playbook:
+```yaml
+- name: configure interface settings
+  ios_config:
+    lines:
+      - description test interface
+      - ip address 172.31.1.1 255.255.255.0
+    parents: interface Ethernet1
+
+- name: configure ip helpers on multiple interfaces
+  ios_config:
+    lines:
+      - ip helper-address 172.26.1.10
+      - ip helper-address 172.26.3.8
+    parents: "{{ item }}"
+  with_items:
+    - interface Ethernet1
+    - interface Ethernet2
+    - interface GigabitEthernet1
+
+- name: load new acl into device
+  ios_config:
+    lines:
+      - 10 permit ip host 1.1.1.1 any log
+      - 20 permit ip host 2.2.2.2 any log
+      - 30 permit ip host 3.3.3.3 any log
+      - 40 permit ip host 4.4.4.4 any log
+      - 50 permit ip host 5.5.5.5 any log
+    parents: ip access-list extended test
+    before: no ip access-list extended test
+    match: exact
+
+- name: check the running-config against master config
+  ios_config:
+    diff_against: intended
+    intended_config: "{{ lookup('file', 'master.cfg') }}"
+
+- name: check the startup-config against the running-config
+  ios_config:
+    diff_against: startup
+    diff_ignore_lines:
+      - ntp clock .*
+
+- name: save running to startup when modified
+  ios_config:
+    save_when: modified
+    
+```
+
+Configuration File
+
+Certain settings in Ansible are adjustable via a configuration file (ansible.cfg). The stock configuration should be sufficient for most users, but there may be reasons you would want to change them.
+Configuration file which will be processed in the following order:
+Environment variable: ANSIBLE_CONFIG
+Actual directory "ansible.cfg" file.
+Home directory "ansible.cfg" file.
+Configuration file stored in "/etc/ansible/ansible.cfg".
+
+| Command | Description |
+| --- | ----------- |
+| ansible all -m ping | The basic command of ansible ad-hoc against 'all' hosts on the inventory file and using the 'ping' module |
+| ansible localhost -m copy -a 'src=/home/myfile dest=/home/mydestinationfolder/myfilecopied' | The command copies a file to a destination folder |
+
+Option
+Default Value
+Description
+inventory	/etc/ansible/hosts	Inventory location
+forks	5	
+Specify number of parallel processes to use
+remote_port	22	Remote SSH port
+host_key_checking	true	Check host key installed
+timeout	10	SSH connection timeout in seconds
+remote_user	root	Remote connection user
+become	false	
+Run operations with become (does not imply password prompting)
+become_method	sudo	Privilege escalation method to use
+pipelining	false	Reduces the number of network operations required to execute a module on the remote server, by executing many Ansible modules without actual file transfer.This can result in a very significant performance improvement when enabled
+
+Please refer to Ansible documentation for more details: https://docs.ansible.com/ansible/latest/reference_appendices/config.html
+
+- Playbooks
+Playbooks are Ansible’s configuration, deployment, and orchestration language. Playbooks are designed to be human-readable and are developed in a basic text language. There are multiple ways to organize playbooks and the files they include.
+
+- Modules
+Ansible ships with a number of modules (called the ‘module library’) that can be executed directly on remote hosts or through playbooks. Users can also write their own modules. These modules can control system resources, like services, packages, or files , or handle executing system commands.
+Ansible modules: https://docs.ansible.com/ansible/latest/modules/list_of_all_modules.html 
+
+
+The following command displays the list of available modules:
+ansible-doc -l | more
+
+
+Narrow down modules related to ASA devices:
+ansible-doc -l | more | grep asa
+
+
+Show actions that a module can perform:
+ansible-doc -s module_name
+
+- Commands
+
+
+
+
+
 
 
 </b></details>
