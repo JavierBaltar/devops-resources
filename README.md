@@ -320,6 +320,8 @@ etcd
 
 Basic Commands:
 
+https://kubernetes.io/docs/reference/kubectl/cheatsheet/ 
+
 kubectl set image
 
 1. Listing resources
