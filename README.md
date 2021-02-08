@@ -110,21 +110,14 @@ Configuration file stored in "/etc/ansible/ansible.cfg".
 | --- | ----------- | -------- |
 | inventory | /etc/ansible/hosts | Inventory location |
 | forks | 5 | Specify number of parallel processes to use |
+| remote_port | 22 | Remote SSH port |
+| host_key_checking | true | Check host key installed |
 
-Option
-Default Value
-Description
-inventory	/etc/ansible/hosts	Inventory location
-forks	5	
-Specify number of parallel processes to use
-remote_port	22	Remote SSH port
-host_key_checking	true	Check host key installed
-timeout	10	SSH connection timeout in seconds
-remote_user	root	Remote connection user
-become	false	
-Run operations with become (does not imply password prompting)
-become_method	sudo	Privilege escalation method to use
-pipelining	false	Reduces the number of network operations required to execute a module on the remote server, by executing many Ansible modules without actual file transfer.This can result in a very significant performance improvement when enabled
+| timeout | 10 | SSH connection timeout in seconds |
+| remote_user | root | Remote connection user |
+| become | false | Run operations with become (does not imply password prompting) |
+| become_method | sudo | Privilege escalation method to use |
+| pipelining | false | Reduces the number of network operations required to execute a module on the remote server, by executing many Ansible modules without actual file transfer.This can result in a very significant performance improvement when enabled |
 
 Please refer to Ansible documentation for more details: https://docs.ansible.com/ansible/latest/reference_appendices/config.html
 
