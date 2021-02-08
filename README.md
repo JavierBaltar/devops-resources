@@ -279,6 +279,10 @@ gcloud container clusters create mycluster
 ## Jenkins
 
 <details>
+<summary>Jenkins Cluster Installation AWS EC2</summary><br><b>
+</b></details>
+
+<details>
 <summary>Jenkins</summary><br><b>
   
 Jenkinsfile to compile and test across two different nodes.
